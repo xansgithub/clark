@@ -18,7 +18,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content == 'farting':
+    if 'farting' in message.content:
         await message.channel.send("i farted lol")
 
 client.run(TOKEN)
